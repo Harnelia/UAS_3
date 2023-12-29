@@ -423,3 +423,30 @@ https://templatemo.com/tm-564-plot-listing
 </body>
 
 </html>
+<!-- class MesinPencarianTabel extends Wisata {
+    // ... (properti dan metode tambahan)
+}
+inheritance
+class SearchEngine extends Wisata {
+    // ... (properti dan metode tambahan)
+}
+
+ -->
+ <!-- konsep encapsulation diterapkan dengan membuat properti kelas private dan menyediakan metode public (getters) untuk mengakses properti tersebut secara aman.
+
+php
+class cari {
+    private $conn;
+
+    public function __construct($conn) {
+        $this->conn = $conn;
+    }
+
+    public function getConn() {
+        return $this->conn;
+    }
+
+    // ... (metode lain)
+}
+ -->
+

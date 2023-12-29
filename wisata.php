@@ -85,6 +85,23 @@ class ResultRenderer {
         $this->wisataList = $wisataList;
     }
 
+// polimor
+// class PromoWisata extends Wisata {
+    // private $promo;
+
+    // public function __construct($nama, $lokasi, $deskripsi, $fasilitas, $harga, $aktivitas, $gambar, $promo) {
+    //     parent::__construct($nama, $lokasi, $deskripsi, $fasilitas, $harga, $aktivitas, $gambar);
+    //     $this->promo = $promo;
+    // }
+
+    // public function getPromo() {
+    //     return $this->promo;
+    // }
+    // Contoh penggunaan PromoWisata
+// $promoWisata = new PromoWisata('Wisata Indah', 'Lokasi Indah', 'Deskripsi Menarik', 'Fasilitas Terbaik', 150000, 'Aktivitas Seru', 'gambar.jpg', 'Diskon 20%');
+// $promoWisata->render();
+
+
     public function render() {
         foreach ($this->wisataList as $wisata) {
             echo '<div class="col-lg-12">';
@@ -116,5 +133,6 @@ class ResultRenderer {
         }
     }
 }
+// disini
 // tes
 ?>

@@ -1,5 +1,5 @@
 <?php
-
+// polimorfisme membuat sbuah kelas dri superclass wisata nah di kls itu akan memiliki properti tmbhan
 class Wisata {
     public $nama;
     public $lokasi;
@@ -23,11 +23,12 @@ class Wisata {
 }
 
 // Kelas Renderer untuk Tempat Wisata
-
+// kelas inheritance
 class MesinPencarianTabel extends Wisata {
+    // private membatasi akses langsung dari luar kelas
     private $koneksi; //Encapsulasi Hanya Biasa Diakses Oleh Class MesinPencarianTabel
     private $namaTabel; //Encapsulasi
-
+// construct itu metode
     public function __construct($conn, $namaTabel) { // constructor
         parent::__construct('', '', '', '', '', '', ''); 
         // Cara memanggil konstruktor dari kelas induk (Wisata) dari dalam kelas anak (MesinPencarianTabel).
@@ -51,10 +52,10 @@ class MesinPencarianTabel extends Wisata {
     }
 }
 
-
+// kelas pewarisan atau inheritance
 class SearchEngine extends Wisata {
     private $conn;
-
+// kelas pewarisan
     public function __construct($conn) {
         parent::__construct("", "", "", "", "", "", "");
         // Cara memanggil konstruktor dari kelas induk (Wisata) dari dalam kelas anak (SearchEngine).
